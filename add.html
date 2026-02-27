@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Address | AquaFlow Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fas fa-droplet"></i>
+            </div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+
+        <nav class="icon-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard 📊</span>
+            </a>
+            <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <a href="produ.html" class="menu-link">
+  <span>Products 📦</span>
+</a>
+
+                <div class="dropdown-content">
+                    <a href="produ.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+          <!-- Customers -->
+<!-- Customers Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-users"></i>
+    <span>Customers 👥</span>
+    
+    <!-- Dropdown Content -->
+    <div class="dropdown-content">
+        <a href="cust.html">New Customer 👤+</a>
+        <a href="order.html">New Sales Order 🛒</a>
+        <a href="pay.html">Add Customer Payment 💰</a>
+        <a href="ledger.html">Customer Ledger 📜</a>
+        <a href="Security.html">Customer Security Amount 🛡️</a>
+        <a href="sheet.html">Customer Balance Sheet ⚖️</a>
+        <a href="price.html">Set Product Price To Customer 🏷️</a>
+        <a href="add.html">Set Customer Pin From Google Map 📍</a>
+    </div>
+</div>
+
+
+<!-- Vendor -->
+<!-- Vendor Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-truck-field"></i>
+    <span>Vendor 🚛</span>
+    
+    <!-- Dropdown Menu Content -->
+    <div class="dropdown-content">
+        <a href="Vendor.html">Create Vendor Account ➕</a>
+        <a href="order.html">New Purchase Order 🛒</a>
+        <a href="venp.html">Add Vendor Payment 💰</a>
+        <a href="venl.html">Vendor Ledger 📜</a>
+        <a href="vens.html">Vendor Balance Sheet 📄</a>
+    </div>
+</div>
+
+<!-- Employee -->
+<!-- Employee / HR Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-user-tie"></i>
+    <span>Employee 👤</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="emp.html">New / Edit Employee 👤+</a>
+        <a href="Area.html">Area Assign To Employee 📍</a>
+    </div>
+</div>
+
+<!-- Reports -->
+<!-- Reports Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-file-invoice"></i>
+    <span>Reports 📑</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Area.html">Print Daily Area List And Tickets 🖨️</a>
+        <a href="sale.html">Daily Sales Report 📈</a>
+        <a href="msale.html">Monthly Sales Report 📊</a>
+        <a href="year.html">Yearly Sales Report 📅</a>
+        <a href="pros.html">Product Wise Sales Report 📦</a>
+    </div>
+</div>
+
+<!-- Investment (New) -->
+<!-- Expenditure / Investment Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-hand-holding-dollar"></i>
+    <span>Expenditure 💰</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="exp.html">Expenditure 💸</a>
+        <a href="invest.html">Investment 📈</a>
+    </div>
+</div>
+
+<!-- Transaction (New) -->
+<!-- Transaction / Bank Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-money-bill-transfer"></i>
+    <span>Transaction 💳</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="tran.html">Add New Bank 🏦</a>
+        <a href="newt.html">Add New Transaction 💵</a>
+        <a href="bant.html">Check Bank Transactions Detail 📜</a>
+    </div>
+</div>
+<!-- Setting -->
+<!-- Setting / Security Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-gear"></i>
+    <span>Setting ⚙️</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Settings.html">Change System Security 🔒</a>
+        <a href="user.html">Software User Roles 👥</a>
+        <a href="sms.html">SMS API 📲</a>
+    </div>
+</div>
+        </nav>
+
+        <div class="window-controls">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+    <div class="user-strip">
+        <span><b>User:</b> Tahir Qureshi 👤</span>
+        <button class="btn-red-sm" onclick="openAdvanceSearch()">Open Advance Search 🔍</button>
+    </div>
+
+    <!-- Main Workspace -->
+    <main class="workspace">
+        <div class="mapping-controls">
+            <!-- Part 1: GPS Entry Area -->
+            <div class="gps-entry">
+                <p class="section-tag">Set Customer Pin Address</p>
+                <label>Latitude and Longitude:</label>
+                <div class="input-row">
+                    <input type="text" id="gpsCoords" class="yellow-input" placeholder="0.00, 0.00">
+                    <button class="btn-blue" onclick="pasteCoordinates()">Paste</button>
+                    <button class="btn-red-sm" onclick="saveCustomerPin()">Set Pin</button>
+                </div>
+            </div>
+
+            <!-- Part 2: Main Screen Search Fields -->
+            <div class="search-pane">
+                <div class="search-fields">
+                    <div class="f-group">
+                        <label>ID</label>
+                        <input type="text" id="targetId" class="yellow-input" readonly>
+                    </div>
+                    <div class="f-group">
+                        <label>Customer Name</label>
+                        <input type="text" id="targetName" class="yellow-input" readonly>
+                    </div>
+                    <div class="f-group">
+                        <label>Address</label>
+                        <input type="text" id="targetAddr" class="yellow-input" readonly>
+                    </div>
+                    <button class="btn-red-search" onclick="openAdvanceSearch()">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Integrated Google Map Frame -->
+        <div class="map-frame">
+            <iframe 
+                id="mapIframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115815.1150070!2d67.0011!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e0660293eb7%3A0xad635832a4e9b986!2sKarachi%2C%20Pakistan!5e0!3m2!1sen!2s!4v1715860000000!5m2!1sen!2s" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+
+            <div class="ie-alert">
+                <p>It looks like you have enabled Internet Explorer Compatibility View. Google Maps will not work correctly unless this is turned off. <span>LEARN HOW TO DO THIS</span></p>
+            </div>
+        </div>
+
+        <!-- ADVANCE SEARCH MODAL (The Popup Interface) -->
+        <div class="modal-overlay" id="searchModal">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <span>Advance Search 🔍</span>
+                    <button class="close-x" onclick="closeAdvanceSearch()">X</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-search-row">
+                        <label>Search By ID Or Customer Name Or Address</label>
+                        <div class="input-action">
+                            <input type="text" id="modalSearchInput" class="yellow-input" placeholder="Type name or ID...">
+                            <button class="btn-red-modal" onclick="simulateSearch()">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="modal-table-container">
+                        <table class="adv-table">
+                            <thead>
+                                <tr>
+                                    <th>SNO</th>
+                                    <th>Acc#</th>
+                                    <th>Customer Name</th>
+                                    <th>Address</th>
+                                    <th>Contact</th>
+                                    <th>Latitude</th>
+                                    <th>Longitude</th>
+                                </tr>
+                            </thead>
+                            <tbody id="modalTableBody">
+                                <!-- Data will be loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="status-bar">
+        <div class="status-left">Copyright all rights reserved by <b>SOFTWEBPK</b></div>
+        <div class="status-center">App Code: <b>RG-Demo</b></div>
+        <div class="status-right">Help Line: <b>0092-315-1150070</b> 📞</div>
+    </footer>
+
+    <script src="add.js"></script>
+</body>
+</html>

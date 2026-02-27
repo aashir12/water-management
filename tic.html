@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Area List | AquaFlow ERP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="tic.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fas fa-droplet"></i>
+            </div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+
+        <nav class="icon-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard 📊</span>
+            </a>
+            <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <a href="produ.html" class="menu-link">
+  <span>Products 📦</span>
+</a>
+
+                <div class="dropdown-content">
+                    <a href="produ.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+          <!-- Customers -->
+<!-- Customers Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-users"></i>
+    <span>Customers 👥</span>
+    
+    <!-- Dropdown Content -->
+    <div class="dropdown-content">
+        <a href="cust.html">New Customer 👤+</a>
+        <a href="order.html">New Sales Order 🛒</a>
+        <a href="pay.html">Add Customer Payment 💰</a>
+        <a href="ledger.html">Customer Ledger 📜</a>
+        <a href="Security.html">Customer Security Amount 🛡️</a>
+        <a href="sheet.html">Customer Balance Sheet ⚖️</a>
+        <a href="price.html">Set Product Price To Customer 🏷️</a>
+        <a href="add.html">Set Customer Pin From Google Map 📍</a>
+    </div>
+</div>
+
+
+<!-- Vendor -->
+<!-- Vendor Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-truck-field"></i>
+    <span>Vendor 🚛</span>
+    
+    <!-- Dropdown Menu Content -->
+    <div class="dropdown-content">
+        <a href="Vendor.html">Create Vendor Account ➕</a>
+        <a href="order.html">New Purchase Order 🛒</a>
+        <a href="venp.html">Add Vendor Payment 💰</a>
+        <a href="venl.html">Vendor Ledger 📜</a>
+        <a href="vens.html">Vendor Balance Sheet 📄</a>
+    </div>
+</div>
+
+<!-- Employee -->
+<!-- Employee / HR Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-user-tie"></i>
+    <span>Employee 👤</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="emp.html">New / Edit Employee 👤+</a>
+        <a href="Area.html">Area Assign To Employee 📍</a>
+    </div>
+</div>
+
+<!-- Reports -->
+<!-- Reports Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-file-invoice"></i>
+    <span>Reports 📑</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Area.html">Print Daily Area List And Tickets 🖨️</a>
+        <a href="sale.html">Daily Sales Report 📈</a>
+        <a href="msale.html">Monthly Sales Report 📊</a>
+        <a href="year.html">Yearly Sales Report 📅</a>
+        <a href="pros.html">Product Wise Sales Report 📦</a>
+    </div>
+</div>
+
+<!-- Investment (New) -->
+<!-- Expenditure / Investment Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-hand-holding-dollar"></i>
+    <span>Expenditure 💰</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="exp.html">Expenditure 💸</a>
+        <a href="invest.html">Investment 📈</a>
+    </div>
+</div>
+
+<!-- Transaction (New) -->
+<!-- Transaction / Bank Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-money-bill-transfer"></i>
+    <span>Transaction 💳</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="tran.html">Add New Bank 🏦</a>
+        <a href="newt.html">Add New Transaction 💵</a>
+        <a href="bant.html">Check Bank Transactions Detail 📜</a>
+    </div>
+</div>
+<!-- Setting -->
+<!-- Setting / Security Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-gear"></i>
+    <span>Setting ⚙️</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Settings.html">Change System Security 🔒</a>
+        <a href="user.html">Software User Roles 👥</a>
+        <a href="sms.html">SMS API 📲</a>
+    </div>
+</div>
+        </nav>
+
+        <div class="window-controls">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+
+    <main class="workspace">
+        <div class="module-header">
+            <h2 class="module-title">PRINT AREA LIST 📋</h2>
+        </div>
+
+        <div class="controls-grid">
+            <!-- Left Info Panel -->
+            <div class="info-sidebar">
+                <div class="input-set">
+                    <label>Date:</label>
+                    <input type="text" id="currentDate" readonly>
+                </div>
+                <div class="input-set">
+                    <label>Emp Name:</label>
+                    <input type="text" id="displayEmpName" readonly placeholder="...">
+                </div>
+                <div class="input-set">
+                    <label>Day:</label>
+                    <input type="text" id="displayDay" readonly placeholder="...">
+                </div>
+            </div>
+
+            <!-- Main Selectors -->
+            <div class="selectors-main">
+                <div class="selector-item">
+                    <label>Select Day</label>
+                    <select id="daySelect" onchange="syncLabels()">
+                        <option value="">SELECT DAY 📅</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                </div>
+                <div class="selector-item">
+                    <label>Select Employee</label>
+                    <select id="employeeSelect" onchange="syncLabels()">
+                        <option value="">SELECT EMPLOYEE 👤</option>
+                        <!-- Linked from DB -->
+                    </select>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-red-lg" onclick="loadAreaList()">Select ✅</button>
+                    <button class="btn-red-lg" onclick="window.print()">Print List 🖨️</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Data Table -->
+        <div class="table-outer-wrapper">
+            <div class="table-header-tag">Employee Area List 🚚</div>
+            <div class="table-container">
+                <table id="areaTable">
+                    <thead>
+                        <tr>
+                            <th>SNO</th>
+                            <th>Area</th>
+                            <th>Customer ID</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Contact</th>
+                            <th>Req Bottle</th>
+                            <th>Price</th>
+                            <th>Sale Bottle</th>
+                            <th>Return Bottle</th>
+                            <th>Bill No</th>
+                            <th>Payment</th>
+                            <th>Balance Amount</th>
+                            <th>Received Amount</th>
+                            <th>Balance Bottle</th>
+                        </tr>
+                    </thead>
+                    <tbody id="areaTableBody">
+                        <tr>
+                            <td colspan="15" style="text-align:center; padding: 50px; opacity: 0.5;">
+                                Please select Day and Employee to generate list...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="bottom-stats">
+            <span>Total Bottles Required: <b id="totalBottles">0</b></span>
+        </div>
+    </main>
+
+    <footer class="status-bar">
+        <div class="status-left">Copyright all rights reserved by <b>SOFTWEBPK</b></div>
+        <div class="status-center">App Code: <b>RG-Demo</b></div>
+        <div class="status-right">Help Line: <b>0092-315-1150070</b> 📞</div>
+    </footer>
+
+    <script src="tic.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Sales Report | AquaFlow ERP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="msale.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fas fa-droplet"></i>
+            </div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+
+        <nav class="icon-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard 📊</span>
+            </a>
+            <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <a href="produ.html" class="menu-link">
+  <span>Products 📦</span>
+</a>
+
+                <div class="dropdown-content">
+                    <a href="produ.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+          <!-- Customers -->
+<!-- Customers Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-users"></i>
+    <span>Customers 👥</span>
+    
+    <!-- Dropdown Content -->
+    <div class="dropdown-content">
+        <a href="cust.html">New Customer 👤+</a>
+        <a href="order.html">New Sales Order 🛒</a>
+        <a href="pay.html">Add Customer Payment 💰</a>
+        <a href="ledger.html">Customer Ledger 📜</a>
+        <a href="Security.html">Customer Security Amount 🛡️</a>
+        <a href="sheet.html">Customer Balance Sheet ⚖️</a>
+        <a href="price.html">Set Product Price To Customer 🏷️</a>
+        <a href="add.html">Set Customer Pin From Google Map 📍</a>
+    </div>
+</div>
+
+
+<!-- Vendor -->
+<!-- Vendor Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-truck-field"></i>
+    <span>Vendor 🚛</span>
+    
+    <!-- Dropdown Menu Content -->
+    <div class="dropdown-content">
+        <a href="Vendor.html">Create Vendor Account ➕</a>
+        <a href="order.html">New Purchase Order 🛒</a>
+        <a href="venp.html">Add Vendor Payment 💰</a>
+        <a href="venl.html">Vendor Ledger 📜</a>
+        <a href="vens.html">Vendor Balance Sheet 📄</a>
+    </div>
+</div>
+
+<!-- Employee -->
+<!-- Employee / HR Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-user-tie"></i>
+    <span>Employee 👤</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="emp.html">New / Edit Employee 👤+</a>
+        <a href="Area.html">Area Assign To Employee 📍</a>
+    </div>
+</div>
+
+<!-- Reports -->
+<!-- Reports Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-file-invoice"></i>
+    <span>Reports 📑</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Area.html">Print Daily Area List And Tickets 🖨️</a>
+        <a href="sale.html">Daily Sales Report 📈</a>
+        <a href="msale.html">Monthly Sales Report 📊</a>
+        <a href="year.html">Yearly Sales Report 📅</a>
+        <a href="pros.html">Product Wise Sales Report 📦</a>
+    </div>
+</div>
+
+<!-- Investment (New) -->
+<!-- Expenditure / Investment Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-hand-holding-dollar"></i>
+    <span>Expenditure 💰</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="exp.html">Expenditure 💸</a>
+        <a href="invest.html">Investment 📈</a>
+    </div>
+</div>
+
+<!-- Transaction (New) -->
+<!-- Transaction / Bank Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-money-bill-transfer"></i>
+    <span>Transaction 💳</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="tran.html">Add New Bank 🏦</a>
+        <a href="newt.html">Add New Transaction 💵</a>
+        <a href="bant.html">Check Bank Transactions Detail 📜</a>
+    </div>
+</div>
+<!-- Setting -->
+<!-- Setting / Security Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-gear"></i>
+    <span>Setting ⚙️</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Settings.html">Change System Security 🔒</a>
+        <a href="user.html">Software User Roles 👥</a>
+        <a href="sms.html">SMS API 📲</a>
+    </div>
+</div>
+        </nav>
+
+        <div class="window-controls">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+    <div class="user-strip">
+        <span><b>User:</b> Tahir Qureshi 👤</span>
+        <span class="module-title">MONTHLY SALES REPORT 📊</span>
+    </div>
+
+    <main class="workspace">
+        <div class="filter-card">
+            <div class="filter-row">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="monthOnly"> <label for="monthOnly">Only Months Wise</label>
+                </div>
+                <div class="filter-group">
+                    <label>Employee #</label>
+                    <select id="empSelect">
+                        <option>All Employees 👤</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>From Month:</label>
+                    <select id="fromMonth">
+                        <option value="01">Jan</option><option value="02">Feb</option>
+                        <option value="03">Mar</option><option value="04">Apr</option>
+                        <option value="05">May</option><option value="06">Jun</option>
+                        <option value="07">Jul</option><option value="08">Aug</option>
+                        <option value="09">Sep</option><option value="10">Oct</option>
+                        <option value="11">Nov</option><option value="12">Dec</option>
+                    </select>
+                    <input type="number" id="fromYear" value="2024" class="year-input">
+                </div>
+                <div class="filter-group">
+                    <label>To Month:</label>
+                    <select id="toMonth">
+                        <option value="01">Jan</option><option value="02">Feb</option>
+                        <option value="03">Mar</option><option value="04">Apr</option>
+                        <option value="05">May</option><option value="06">Jun</option>
+                        <option value="07">Jul</option><option value="08">Aug</option>
+                        <option value="09">Sep</option><option value="10">Oct</option>
+                        <option value="11">Nov</option><option value="12" selected>Dec</option>
+                    </select>
+                    <input type="number" id="toYear" value="2024" class="year-input">
+                </div>
+                <div class="action-btns">
+                    <button class="btn-red-search" onclick="generateMonthlyReport()">Search 🔍</button>
+                    <button class="btn-red-search" onclick="window.print()">Print 🖨️</button>
+                </div>
+            </div>
+            <p class="range-text">From: [<span id="dispFrom">Jan-2024</span>] To: [<span id="dispTo">Dec-2024</span>]</p>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SNO</th>
+                        <th>Month</th>
+                        <th>Year</th>
+                        <th>Products</th>
+                        <th>Sale</th>
+                        <th>Return 19 Ltr Bottle</th>
+                        <th>Bill Amount</th>
+                        <th>Payment</th>
+                        <th>Tax / Discount</th>
+                        <th>Deliver Person</th>
+                    </tr>
+                </thead>
+                <tbody id="monthlyTableBody">
+                    <!-- Stored data will appear here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="summary-footer">
+            <div class="tax-row">
+                <label>Tax / Discount:</label>
+                <input type="number" id="footTax" value="0" class="bg-yellow-highlight">
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-col">
+                    <div class="stat-box"><label>Sale 19 LTR Bottle:</label> <input type="text" id="totSale" value="0" readonly></div>
+                    <div class="stat-box"><label>Return 19 LTR Bottle:</label> <input type="text" id="totRet" value="0" readonly></div>
+                </div>
+                <div class="stat-col">
+                    <div class="stat-box"><label>Bill Amount:</label> <input type="text" id="totBill" class="bg-green" value="0" readonly></div>
+                    <div class="stat-box"><label>Payment Received:</label> <input type="text" id="totPay" class="bg-orange" value="0" readonly></div>
+                </div>
+                <div class="stat-col">
+                    <div class="stat-box"><label>Credit / Debit</label> <input type="text" value="0" readonly></div>
+                    <div class="stat-box highlight-red"><input type="text" id="netBalance" value="0" readonly></div>
+                </div>
+                <div class="stat-col">
+                    <div class="stat-box"><label>Total Expense</label> <input type="text" value="0" readonly></div>
+                    <div class="stat-box"><label>Cash In Hand</label> <input type="text" value="0" readonly></div>
+                </div>
+                <div class="stat-col red-labels">
+                    <div class="stat-box"><span>Daily Cash</span> <input type="text" value="0" readonly></div>
+                    <div class="stat-box"><span>Pay. Receivable</span> <input type="text" value="0" readonly></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="status-bar">
+        <div class="status-left">© SOFTWEBPK - Financial Analytics</div>
+        <div class="status-right">Help Line: 0092-315-1150070 📞</div>
+    </footer>
+
+    <script src="msale.js"></script>
+</body>
+</html>

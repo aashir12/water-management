@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Order | AquaFlow ERP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="pur.css">
+</head>
+<body>
+
+   
+   <!-- Header Section -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fas fa-droplet"></i>
+            </div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+
+        <nav class="icon-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard 📊</span>
+            </a>
+            <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <a href="produ.html" class="menu-link">
+  <span>Products 📦</span>
+</a>
+
+                <div class="dropdown-content">
+                    <a href="produ.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+          <!-- Customers -->
+<!-- Customers Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-users"></i>
+    <span>Customers 👥</span>
+    
+    <!-- Dropdown Content -->
+    <div class="dropdown-content">
+        <a href="cust.html">New Customer 👤+</a>
+        <a href="order.html">New Sales Order 🛒</a>
+        <a href="pay.html">Add Customer Payment 💰</a>
+        <a href="ledger.html">Customer Ledger 📜</a>
+        <a href="Security.html">Customer Security Amount 🛡️</a>
+        <a href="sheet.html">Customer Balance Sheet ⚖️</a>
+        <a href="price.html">Set Product Price To Customer 🏷️</a>
+        <a href="add.html">Set Customer Pin From Google Map 📍</a>
+    </div>
+</div>
+
+
+<!-- Vendor -->
+<!-- Vendor Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-truck-field"></i>
+    <span>Vendor 🚛</span>
+    
+    <!-- Dropdown Menu Content -->
+    <div class="dropdown-content">
+        <a href="Vendor.html">Create Vendor Account ➕</a>
+        <a href="order.html">New Purchase Order 🛒</a>
+        <a href="venp.html">Add Vendor Payment 💰</a>
+        <a href="venl.html">Vendor Ledger 📜</a>
+        <a href="vens.html">Vendor Balance Sheet 📄</a>
+    </div>
+</div>
+
+<!-- Employee -->
+<!-- Employee / HR Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-user-tie"></i>
+    <span>Employee 👤</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="emp.html">New / Edit Employee 👤+</a>
+        <a href="Area.html">Area Assign To Employee 📍</a>
+    </div>
+</div>
+
+<!-- Reports -->
+<!-- Reports Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-file-invoice"></i>
+    <span>Reports 📑</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Area.html">Print Daily Area List And Tickets 🖨️</a>
+        <a href="sale.html">Daily Sales Report 📈</a>
+        <a href="msale.html">Monthly Sales Report 📊</a>
+        <a href="year.html">Yearly Sales Report 📅</a>
+        <a href="pros.html">Product Wise Sales Report 📦</a>
+    </div>
+</div>
+
+<!-- Investment (New) -->
+<!-- Expenditure / Investment Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-hand-holding-dollar"></i>
+    <span>Expenditure 💰</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="exp.html">Expenditure 💸</a>
+        <a href="invest.html">Investment 📈</a>
+    </div>
+</div>
+
+<!-- Transaction (New) -->
+<!-- Transaction / Bank Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-money-bill-transfer"></i>
+    <span>Transaction 💳</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="tran.html">Add New Bank 🏦</a>
+        <a href="newt.html">Add New Transaction 💵</a>
+        <a href="bant.html">Check Bank Transactions Detail 📜</a>
+    </div>
+</div>
+<!-- Setting -->
+<!-- Setting / Security Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-gear"></i>
+    <span>Setting ⚙️</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Settings.html">Change System Security 🔒</a>
+        <a href="user.html">Software User Roles 👥</a>
+        <a href="sms.html">SMS API 📲</a>
+    </div>
+</div>
+        </nav>
+
+        <div class="window-controls">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+    <div class="user-strip">
+        <span><b>User:</b> Tahir Qureshi 👤</span>
+    </div>
+
+    <main class="workspace">
+        <div class="page-header">
+            <h2>PURCHASE ORDER ENTRY 📈</h2>
+            <div class="search-section">
+                <label>Search By Vendor ID</label>
+                <div class="search-group">
+                    <input type="text" id="vSearchId" class="qty-yellow" placeholder="1">
+                    <button class="btn-red-search" onclick="searchVendor()">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upper Section: Input Form -->
+        <div class="main-grid">
+            <section class="form-pane">
+                <div class="group-box">
+                    <span class="group-label">New Purchase Item</span>
+                    <div class="input-group">
+                        <label>Select Product 📦</label>
+                        <select id="prodSelect">
+                            <option value="">-- Choose Product --</option>
+                            <option value="100" data-name="19 Litre Jar">19 Litre Jar 🍶</option>
+                            <option value="40" data-name="600ml Bottle">600ml Bottle 💧</option>
+                            <option value="60" data-name="1.5 Litre Bottle">1.5 Litre Bottle 🍼</option>
+                            <option value="5" data-name="Caps / Seals">Caps ⚙️</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label style="color:red">Purchase Quantity 🔢</label>
+                        <input type="number" id="pQty" class="qty-yellow big-input" value="0">
+                    </div>
+                    <div class="btn-footer">
+                        <button class="btn-blue-outline" onclick="location.reload()">Clear Item 🧹</button>
+                        <button class="btn-blue-dark" onclick="addItemToList()">Add Item In List ➕</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="billing-pane">
+                <div class="group-box">
+                    <span class="group-label">Billing Detail</span>
+                    <div class="vendor-info-row">
+                        <input type="text" id="dispVName" readonly class="grey-input" placeholder="Vendor Name">
+                        <input type="text" id="billBook" class="qty-yellow" value="PB-1002">
+                    </div>
+                    <div class="table-container">
+                        <table id="tempBillTable">
+                            <thead>
+                                <tr><th>Product</th><th>Price</th><th>Qty</th><th>Total</th></tr>
+                            </thead>
+                            <tbody id="billBody"></tbody>
+                        </table>
+                    </div>
+                    <div class="billing-summary">
+                        <button class="btn-save-bill" onclick="openPaymentModal()">Save Purchase Bill ✅</button>
+                        <div class="total-display">Total Amount: <b id="grandTotal">0.00</b></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- BOTTOM SECTION: LIVE OUTPUT (STORES DATA) -->
+        <div class="output-section">
+            <div class="section-header">
+                <h3><i class="fas fa-history"></i> Purchase History Output (Live Database)</h3>
+                <button class="btn-refresh" onclick="renderHistory()"><i class="fas fa-sync"></i> Refresh Log</button>
+            </div>
+            <div class="table-wrapper">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Ref ID</th>
+                            <th>Date</th>
+                            <th>Vendor</th>
+                            <th>Items Purchased</th>
+                            <th>Grand Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyLogBody">
+                        <!-- Stored data will appear here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Payment -->
+    <div class="modal-overlay" id="paymentModal">
+        <div class="modal-window">
+            <div class="modal-header"><span>Bill Payment</span> <button onclick="closeModal()">X</button></div>
+            <div class="modal-body">
+                <label>Amount to Pay:</label>
+                <input type="number" id="modalPayInput" class="qty-yellow" style="font-size:2rem">
+                <button class="btn-blue-dark" style="margin-top:15px" onclick="saveFullPurchase()">Confirm Payment & Store</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="status-bar">
+        <div class="status-left">© SOFTWEBPK - Procurement & Stock Management</div>
+        <div class="status-right">Help Line: 0092-315-1150070 📞</div>
+    </footer>
+
+    <script src="pur.js"></script>
+</body>
+</html>

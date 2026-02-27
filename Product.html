@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product | Inventory Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="Prod.css">
+</head>
+<body>
+
+    <!-- Header Section (Same as Main Page) -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle"><i class="fas fa-droplet"></i></div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+        <nav class="icon-nav">
+            <a href="index.html" class="nav-item"><i class="fas fa-chart-line"></i><span>Dashboard</span></a>
+           
+            
+          <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <span>Products 📦</span>
+                <div class="dropdown-content">
+                    <a href="Product.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+             <a href="cust.html" class="nav-item">
+                <i class="fas fa-users"></i>
+                <span>Customers 👥</span>
+            </a>
+            <a href="vendor.html" class="nav-item">
+                <i class="fas fa-truck"></i>
+                <span>Vendor 🚛</span>
+            </a>
+            <a href="staff.html" class="nav-item">
+                <i class="fas fa-user-tie"></i>
+                <span>Employee 👤</span>
+            </a>
+            <a href="Reports.html" class="nav-item">
+                <i class="fas fa-file-invoice"></i>
+                <span>Reports 📑</span>
+            </a>
+            <a href="Settings.html" class="nav-item">
+                <i class="fas fa-gear"></i>
+                <span>Setting ⚙️</span>
+            </a>
+        </nav>
+        <div class="window-controls">
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+    <main class="form-wrapper">
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <div class="breadcrumbs">
+                <a href="index.html">Dashboard</a> / <span>Add New Product</span>
+            </div>
+
+            <div class="form-header">
+                <h2><i class="fas fa-plus-circle"></i> Create New Product Record 📦</h2>
+                <p>Enter the details below to add a new water product or equipment to your inventory.</p>
+            </div>
+
+            <form id="productForm" class="professional-form">
+                <!-- Section 1: Basic Information -->
+                <div class="form-section">
+                    <h3><i class="fas fa-info-circle"></i> Basic Identification</h3>
+                    <div class="grid-3">
+                        <div class="input-group">
+                            <label>Product Name 🏷️</label>
+                            <input type="text" placeholder="e.g. 19L Mineral Jar" required>
+                        </div>
+                        <div class="input-group">
+                            <label>SKU / Barcode 🆔</label>
+                            <input type="text" placeholder="AF-WATER-001">
+                        </div>
+                        <div class="input-group">
+                            <label>Category 📂</label>
+                            <select>
+                                <option>Natural Mineral Water</option>
+                                <option>Distilled Water</option>
+                                <option>Empty Bottles/Jars</option>
+                                <option>Filters & Spare Parts</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Inventory & Pricing -->
+                <div class="form-section">
+                    <h3><i class="fas fa-money-bill-wave"></i> Stock & Pricing</h3>
+                    <div class="grid-4">
+                        <div class="input-group">
+                            <label>Initial Stock 📦</label>
+                            <input type="number" placeholder="0">
+                        </div>
+                        <div class="input-group">
+                            <label>Unit (e.g. Gallon, Bottle) 📏</label>
+                            <input type="text" placeholder="e.g. 19 Liters">
+                        </div>
+                        <div class="input-group">
+                            <label>Purchase Price ($) 📉</label>
+                            <input type="number" step="0.01" placeholder="0.00">
+                        </div>
+                        <div class="input-group">
+                            <label>Selling Price ($) 📈</label>
+                            <input type="number" step="0.01" placeholder="0.00">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Logistics & Alerts -->
+                <div class="form-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Logistics & Safety</h3>
+                    <div class="grid-3">
+                        <div class="input-group">
+                            <label>Warehouse Location 🏢</label>
+                            <input type="text" placeholder="Shelf A, Row 4">
+                        </div>
+                        <div class="input-group">
+                            <label>Reorder Level (Alert) ⚠️</label>
+                            <input type="number" placeholder="Alert at min quantity">
+                        </div>
+                        <div class="input-group">
+                            <label>Expiry Tracking ⏳</label>
+                            <input type="date">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-footer-actions">
+                    <button type="reset" class="btn-clear">Clear Form 🧹</button>
+                    <button type="submit" class="btn-submit">Save Product to Database ✅</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Same as Index -->
+    <footer class="status-bar">
+        <div class="status-left">© SOFTWEBPK - Inventory System</div>
+        <div class="status-right">Help Line: 0092-315-1150070 📞</div>
+    </footer>
+
+    <script src="Prod.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Order | AquaFlow ERP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="purch.css">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle"><i class="fas fa-droplet"></i></div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software Pro</p>
+            </div>
+        </div>
+        <nav class="software-nav">
+            <a href="produ.html" class="nav-item"><span>Dashboard 📊</span></a>
+            <a href="Prod.html" class="nav-item"><span>Products 📦</span></a>
+            <a href="cust.html" class="nav-item"><span>Customers 👥</span></a>
+            <a href="Vendor.html" class="nav-item"><span>Vendor 🚛</span></a>
+            <a href="purch.html" class="nav-item active"><span>Purchase 🛒</span></a>
+            <a href="Settings.html" class="nav-item"><span>Setting ⚙️</span></a>
+        </nav>
+        <div class="window-controls">
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-rectangle-xmark close-btn" onclick="location.href='produ.html'"></i>
+        </div>
+    </header>
+
+    <div class="user-strip">
+        <span><b>User:</b> Tahir Qureshi 👤</span>
+    </div>
+
+    <main class="workspace">
+        <div class="page-header">
+            <h2>PURCHASE ORDER 🛒</h2>
+            <div class="search-section">
+                <label>Search By Vendor ID</label>
+                <div class="search-group">
+                    <input type="text" id="topSearchId" class="qty-yellow" placeholder="Enter ID...">
+                    <button class="btn-red-sm" onclick="quickSearch()">Search</button>
+                    <!-- Trigger for Modal -->
+                    <button class="btn-red-sm" onclick="openModal()">Advance Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-grid">
+            <!-- LEFT: Form Pane -->
+            <section class="form-pane">
+                <div class="content-box">
+                    <p class="box-label">New Purchase Order</p>
+                    <div class="input-group">
+                        <label>Select Product</label>
+                        <select id="prodSelect" onchange="updatePrice()">
+                            <option value="">-- Choose Item --</option>
+                            <option value="550">19 LTR Jar 🍶</option>
+                            <option value="60">1.5 LTR Case 🍼</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Price</label>
+                        <input type="number" id="unitPrice" class="qty-yellow" value="0">
+                    </div>
+                    <div class="input-group">
+                        <label style="color:red">Purchase Quantity</label>
+                        <input type="number" id="pQty" class="qty-yellow big-input" value="0" oninput="calculateAmount()">
+                    </div>
+                    <div class="input-group">
+                        <label>Amount</label>
+                        <input type="text" id="lineTotal" class="read-only-grey" readonly value="0">
+                    </div>
+
+                    <div class="form-btns">
+                        <button class="btn-blue-sm" onclick="location.reload()">Clear Item 🧹</button>
+                        <button class="btn-blue-sm" onclick="newOrderReset()">New Purchase Order ✨</button>
+                        <button class="btn-blue-sm" onclick="addItem()">Add Item In List ➕</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RIGHT: Output Billing Pane -->
+            <section class="billing-pane">
+                <div class="group-box">
+                    <span class="group-label">Billing</span>
+                    
+                    <!-- VENDOR INFORMATION (This is the Output Area) -->
+                    <div class="vendor-output-frame">
+                        <p class="box-tag">Vendor Information</p>
+                        <div class="info-grid">
+                            <div class="field"><label>Vendor ID</label><input type="text" id="resId" readonly class="read-only-grey"></div>
+                            <div class="field"><label>Vendor Name:</label><input type="text" id="resName" readonly class="read-only-grey"></div>
+                            <div class="field"><label>Address:</label><input type="text" id="resAddr" readonly class="read-only-grey"></div>
+                        </div>
+                    </div>
+
+                    <div class="meta-row">
+                        <div class="field"><label>Order Date:</label><input type="date" id="orderDate"></div>
+                        <div class="field"><label>Purchase Invoice #</label><input type="text" class="read-only-grey" value="PO-0902021164420" readonly></div>
+                        <div class="field"><label>Bill Book #</label><input type="text" class="qty-yellow" value="0"></div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Total</th></tr></thead>
+                            <tbody id="billBody"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="billing-footer">
+                        <button class="btn-save-bill" onclick="alert('Transaction Saved!')">Save Purchase Bill ✅</button>
+                        <div class="final-totals">
+                            <span>Total Amount:</span> <input type="text" id="grandTotal" value="0" readonly>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ADVANCE SEARCH MODAL (The Popup from Image) -->
+        <div class="modal-overlay" id="searchModal">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <span>Advance Search 🔍</span>
+                    <button class="close-x" onclick="closeModal()">X</button>
+                </div>
+                <div class="modal-body">
+                    <label>Search By ID Or Vendor Name Or Address</label>
+                    <div class="modal-search-row">
+                        <input type="text" id="modalInput" class="qty-yellow" placeholder="Type here..." onkeyup="filterModal()">
+                        <button class="btn-red-search">Search</button>
+                    </div>
+                    <div class="modal-table-container">
+                        <table>
+                            <thead>
+                                <tr><th>SNO</th><th>Acc#</th><th>Vendor Name</th><th>Address</th><th>Contact</th><th>Action</th></tr>
+                            </thead>
+                            <tbody id="modalTableBody">
+                                <!-- Data will be loaded here from Storage -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <button class="btn-save-bill" onclick="alert('Transaction Saved!')"></button>
+
+    <script src="purch.js"></script>
+</body>
+</html>

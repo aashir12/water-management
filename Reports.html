@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Intelligence | AquaFlow Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Reports.css">
+</head>
+<body>
+
+  
+    <!-- Header Section -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fas fa-droplet"></i>
+            </div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+
+        <nav class="icon-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard 📊</span>
+            </a>
+            <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <a href="produ.html" class="menu-link">
+  <span>Products 📦</span>
+</a>
+
+                <div class="dropdown-content">
+                    <a href="produ.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+          <!-- Customers -->
+<!-- Customers Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-users"></i>
+    <span>Customers 👥</span>
+    
+    <!-- Dropdown Content -->
+    <div class="dropdown-content">
+        <a href="cust.html">New Customer 👤+</a>
+        <a href="order.html">New Sales Order 🛒</a>
+        <a href="pay.html">Add Customer Payment 💰</a>
+        <a href="ledger.html">Customer Ledger 📜</a>
+        <a href="Security.html">Customer Security Amount 🛡️</a>
+        <a href="sheet.html">Customer Balance Sheet ⚖️</a>
+        <a href="price.html">Set Product Price To Customer 🏷️</a>
+        <a href="add.html">Set Customer Pin From Google Map 📍</a>
+    </div>
+</div>
+
+
+<!-- Vendor -->
+<!-- Vendor Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-truck-field"></i>
+    <span>Vendor 🚛</span>
+    
+    <!-- Dropdown Menu Content -->
+    <div class="dropdown-content">
+        <a href="Vendor.html">Create Vendor Account ➕</a>
+        <a href="order.html">New Purchase Order 🛒</a>
+        <a href="venp.html">Add Vendor Payment 💰</a>
+        <a href="venl.html">Vendor Ledger 📜</a>
+        <a href="vens.html">Vendor Balance Sheet 📄</a>
+    </div>
+</div>
+
+<!-- Employee -->
+<!-- Employee / HR Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-user-tie"></i>
+    <span>Employee 👤</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="emp.html">New / Edit Employee 👤+</a>
+        <a href="Area.html">Area Assign To Employee 📍</a>
+    </div>
+</div>
+
+<!-- Reports -->
+<!-- Reports Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-file-invoice"></i>
+    <span>Reports 📑</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Area.html">Print Daily Area List And Tickets 🖨️</a>
+        <a href="sale.html">Daily Sales Report 📈</a>
+        <a href="msale.html">Monthly Sales Report 📊</a>
+        <a href="year.html">Yearly Sales Report 📅</a>
+        <a href="pros.html">Product Wise Sales Report 📦</a>
+    </div>
+</div>
+
+<!-- Investment (New) -->
+<!-- Expenditure / Investment Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-hand-holding-dollar"></i>
+    <span>Expenditure 💰</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="exp.html">Expenditure 💸</a>
+        <a href="invest.html">Investment 📈</a>
+    </div>
+</div>
+
+<!-- Transaction (New) -->
+<!-- Transaction / Bank Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-money-bill-transfer"></i>
+    <span>Transaction 💳</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="tran.html">Add New Bank 🏦</a>
+        <a href="newt.html">Add New Transaction 💵</a>
+        <a href="bant.html">Check Bank Transactions Detail 📜</a>
+    </div>
+</div>
+<!-- Setting -->
+<!-- Setting / Security Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-gear"></i>
+    <span>Setting ⚙️</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Settings.html">Change System Security 🔒</a>
+        <a href="user.html">Software User Roles 👥</a>
+        <a href="sms.html">SMS API 📲</a>
+    </div>
+</div>
+        </nav>
+
+        <div class="window-controls">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- 1. Executive Summary Cards (Live Data Linked) -->
+            <div class="summary-grid">
+                <div class="sum-card profit">
+                    <h3>Estimated Inventory Value 💰</h3>
+                    <p class="value" id="statInventoryValue">$0.00</p>
+                    <small>Total cost of current stock</small>
+                </div>
+                <div class="sum-card sales">
+                    <h3>Units Dispatched Today 🚚</h3>
+                    <p class="value" id="statTodaySales">0 Units</p>
+                    <small>Aggregate from Stock-OUT logs</small>
+                </div>
+                <div class="sum-card dues">
+                    <h3>Total Receivables 🛑</h3>
+                    <p class="value" id="statTotalDues">$0.00</p>
+                    <small>Sum of all customer balances</small>
+                </div>
+            </div>
+
+            <!-- 2. Report Selection Sidebar & Content -->
+            <div class="report-container">
+                <aside class="report-sidebar">
+                    <ul class="report-menu">
+                        <li class="active" id="btn-sales" onclick="showReport('sales')"><i class="fas fa-cash-register"></i> Movement Report</li>
+                        <li id="btn-stock" onclick="showReport('stock')"><i class="fas fa-warehouse"></i> Stock Valuation</li>
+                        <li id="btn-dues" onclick="showReport('dues')"><i class="fas fa-users-slash"></i> Customer Dues</li>
+                        <li id="btn-staff" onclick="showReport('staff')"><i class="fas fa-user-check"></i> Staff Performance</li>
+                    </ul>
+                </aside>
+
+                <section class="report-view">
+                    <div class="report-header">
+                        <h2 id="reportTitle">Loading...</h2>
+                        <div class="report-filters">
+                            <input type="date" id="dateFrom">
+                            <span>To</span>
+                            <input type="date" id="dateTo">
+                            <button class="btn-primary" onclick="syncAllData()"><i class="fas fa-sync"></i> Refresh</button>
+                            <button class="btn-outline" onclick="location.href='Print.html'"><i class="fas fa-file-pdf"></i> Export</button>
+                        </div>
+                    </div>
+
+                    <div class="report-data">
+                        <!-- Chart Mockup -->
+                        <div class="chart-box">
+                            <div class="bar" style="height: 60%;"></div>
+                            <div class="bar" style="height: 85%;"></div>
+                            <div class="bar" style="height: 45%;"></div>
+                            <div class="bar" style="height: 95%;"></div>
+                            <div class="bar" style="height: 75%;"></div>
+                            <p class="chart-label">Operational Growth Trends (Live)</p>
+                        </div>
+
+                        <!-- Data Table -->
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr id="tableHead">
+                                        <!-- Dynamic Head -->
+                                    </tr>
+                                </thead>
+                                <tbody id="reportTableBody">
+                                    <!-- Dynamic Data from JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="status-bar">
+        <div class="status-left">© SOFTWEBPK - Business Intelligence Unit</div>
+        <div class="status-right">Database Sync: <span id="syncTime">--:--:--</span> <span class="sync-dot">●</span></div>
+    </footer>
+
+    <script src="Reports.js"></script>
+</body>
+</html>

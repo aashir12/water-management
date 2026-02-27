@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Roles Management | AquaFlow Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+
+  
+ <!-- Header Section -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fas fa-droplet"></i>
+            </div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+
+        <nav class="icon-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard 📊</span>
+            </a>
+            <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <a href="produ.html" class="menu-link">
+  <span>Products 📦</span>
+</a>
+
+                <div class="dropdown-content">
+                    <a href="produ.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+          <!-- Customers -->
+<!-- Customers Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-users"></i>
+    <span>Customers 👥</span>
+    
+    <!-- Dropdown Content -->
+    <div class="dropdown-content">
+        <a href="cust.html">New Customer 👤+</a>
+        <a href="order.html">New Sales Order 🛒</a>
+        <a href="pay.html">Add Customer Payment 💰</a>
+        <a href="ledger.html">Customer Ledger 📜</a>
+        <a href="Security.html">Customer Security Amount 🛡️</a>
+        <a href="sheet.html">Customer Balance Sheet ⚖️</a>
+        <a href="price.html">Set Product Price To Customer 🏷️</a>
+        <a href="add.html">Set Customer Pin From Google Map 📍</a>
+    </div>
+</div>
+
+
+<!-- Vendor -->
+<!-- Vendor Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-truck-field"></i>
+    <span>Vendor 🚛</span>
+    
+    <!-- Dropdown Menu Content -->
+    <div class="dropdown-content">
+        <a href="Vendor.html">Create Vendor Account ➕</a>
+        <a href="order.html">New Purchase Order 🛒</a>
+        <a href="venp.html">Add Vendor Payment 💰</a>
+        <a href="venl.html">Vendor Ledger 📜</a>
+        <a href="vens.html">Vendor Balance Sheet 📄</a>
+    </div>
+</div>
+
+<!-- Employee -->
+<!-- Employee / HR Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-user-tie"></i>
+    <span>Employee 👤</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="emp.html">New / Edit Employee 👤+</a>
+        <a href="Area.html">Area Assign To Employee 📍</a>
+    </div>
+</div>
+
+<!-- Reports -->
+<!-- Reports Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-file-invoice"></i>
+    <span>Reports 📑</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Area.html">Print Daily Area List And Tickets 🖨️</a>
+        <a href="sale.html">Daily Sales Report 📈</a>
+        <a href="msale.html">Monthly Sales Report 📊</a>
+        <a href="year.html">Yearly Sales Report 📅</a>
+        <a href="pros.html">Product Wise Sales Report 📦</a>
+    </div>
+</div>
+
+<!-- Investment (New) -->
+<!-- Expenditure / Investment Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-hand-holding-dollar"></i>
+    <span>Expenditure 💰</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="exp.html">Expenditure 💸</a>
+        <a href="invest.html">Investment 📈</a>
+    </div>
+</div>
+
+<!-- Transaction (New) -->
+<!-- Transaction / Bank Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-money-bill-transfer"></i>
+    <span>Transaction 💳</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="tran.html">Add New Bank 🏦</a>
+        <a href="newt.html">Add New Transaction 💵</a>
+        <a href="bant.html">Check Bank Transactions Detail 📜</a>
+    </div>
+</div>
+<!-- Setting -->
+<!-- Setting / Security Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-gear"></i>
+    <span>Setting ⚙️</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Settings.html">Change System Security 🔒</a>
+        <a href="user.html">Software User Roles 👥</a>
+        <a href="sms.html">SMS API 📲</a>
+    </div>
+</div>
+        </nav>
+
+        <div class="window-controls">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+    <div class="user-strip">
+        <span><b>User:</b> Tahir Qureshi 👤</span>
+        <span class="brand-tag">SOFTWEBPK Enterprise v4.5</span>
+    </div>
+
+    <main class="workspace">
+        <div class="page-header">
+            <h2>SOFTWARE USER ROLES 🔐</h2>
+            <div class="employee-selector">
+                <label>Employee</label>
+                <select id="userSelect" onchange="loadPermissions()">
+                    <option value="1">1-(TAHIR QURESHI) 👤</option>
+                    <option value="2">2-(SALEEM AHMED) 👤</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="permissions-grid">
+            <!-- Products Section -->
+            <div class="role-card">
+                <span class="card-label">Products Section 📦</span>
+                <div class="check-list">
+                    <label><input type="checkbox" data-role="add-prod"> Add New Product</label>
+                    <label><input type="checkbox" data-role="fill-stock"> Add New Bottle Filling Stock</label>
+                    <label><input type="checkbox" data-role="fill-history"> Filling Stock History</label>
+                    <label><input type="checkbox" data-role="stock-move"> Stock IN / OUT</label>
+                    <label><input type="checkbox" data-role="stock-bal"> Check Stock Balance</label>
+                </div>
+            </div>
+
+            <!-- Customers Section -->
+            <div class="role-card">
+                <span class="card-label">Customers Section 👥</span>
+                <div class="check-list">
+                    <label><input type="checkbox" data-role="new-cust"> New / Edit Customer</label>
+                    <label><input type="checkbox" data-role="sales-order"> New Sales Order</label>
+                    <label><input type="checkbox" data-role="cust-pay"> Add Customer Payment</label>
+                    <label><input type="checkbox" data-role="cust-ledger"> Customer Ledger</label>
+                    <label><input type="checkbox" data-role="cust-sec"> Customer Security Amount</label>
+                    <label><input type="checkbox" data-role="cust-bal"> Customer Balance Sheet</label>
+                </div>
+            </div>
+
+            <!-- Vendors Section -->
+            <div class="role-card">
+                <span class="card-label">Vendors Section 🚛</span>
+                <div class="check-list">
+                    <label><input type="checkbox" data-role="new-vendor"> Create Vendor Account</label>
+                    <label><input type="checkbox" data-role="purch-order"> New Purchase Order</label>
+                    <label><input type="checkbox" data-role="vendor-pay"> Add Vendor Payment</label>
+                    <label><input type="checkbox" data-role="vendor-ledger"> Vendor Ledger</label>
+                </div>
+            </div>
+
+            <!-- Employee Section -->
+            <div class="role-card">
+                <span class="card-label">Employee Section 👤</span>
+                <div class="check-list">
+                    <label><input type="checkbox" data-role="staff-mgmt"> New / Edit Employee</label>
+                    <label><input type="checkbox" data-role="area-assign"> Area Assign To Employee</label>
+                </div>
+            </div>
+
+            <!-- Reports Section -->
+            <div class="role-card">
+                <span class="card-label">Reports Section 📑</span>
+                <div class="check-list">
+                    <label><input type="checkbox" data-role="rep-daily"> Daily Sales Report</label>
+                    <label><input type="checkbox" data-role="rep-month"> Monthly Sales Report</label>
+                    <label><input type="checkbox" data-role="rep-year"> Yearly Sales Report</label>
+                    <label><input type="checkbox" data-role="rep-prod"> Product Wise Sales Report</label>
+                </div>
+            </div>
+
+            <!-- Expenditure Section -->
+            <div class="role-card">
+                <span class="card-label">Expenditure Section 💸</span>
+                <div class="check-list">
+                    <label><input type="checkbox" data-role="exp-mgmt"> Expenditure</label>
+                    <label><input type="checkbox" data-role="inv-mgmt"> Investment</label>
+                </div>
+            </div>
+
+            <!-- Transactions Section -->
+            <div class="role-card">
+                <span class="card-label">Transactions Section 💳</span>
+                <div class="check-list">
+                    <label><input type="checkbox" data-role="bank-mgmt"> Add New Bank</label>
+                    <label><input type="checkbox" data-role="trans-new"> Add New Transaction</label>
+                </div>
+            </div>
+
+            <!-- Dashboard Section -->
+            <div class="role-card">
+                <span class="card-label">Dashboard Section 📊</span>
+                <div class="check-list">
+                    <label><input type="checkbox" data-role="dash-view"> Daily Dashboard</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-action">
+            <button class="btn-update-role" onclick="savePermissions()">Update User Role ✅</button>
+        </div>
+    </main>
+
+    <footer class="status-bar">
+        <div class="status-left">© SOFTWEBPK - Security & Access Module</div>
+        <div class="status-center">System Mode: <span id="sysMode">● Professional</span></div>
+        <div class="status-right">Database Sync: <span style="color:#22c55e">Online</span></div>
+    </footer>
+
+    <script src="user.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Ledger | AquaFlow Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="ledger.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fas fa-droplet"></i>
+            </div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+
+        <nav class="icon-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard 📊</span>
+            </a>
+            <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <a href="produ.html" class="menu-link">
+  <span>Products 📦</span>
+</a>
+
+                <div class="dropdown-content">
+                    <a href="produ.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+          <!-- Customers -->
+<!-- Customers Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-users"></i>
+    <span>Customers 👥</span>
+    
+    <!-- Dropdown Content -->
+    <div class="dropdown-content">
+        <a href="cust.html">New Customer 👤+</a>
+        <a href="order.html">New Sales Order 🛒</a>
+        <a href="pay.html">Add Customer Payment 💰</a>
+        <a href="ledger.html">Customer Ledger 📜</a>
+        <a href="Security.html">Customer Security Amount 🛡️</a>
+        <a href="sheet.html">Customer Balance Sheet ⚖️</a>
+        <a href="price.html">Set Product Price To Customer 🏷️</a>
+        <a href="add.html">Set Customer Pin From Google Map 📍</a>
+    </div>
+</div>
+
+
+<!-- Vendor -->
+<!-- Vendor Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-truck-field"></i>
+    <span>Vendor 🚛</span>
+    
+    <!-- Dropdown Menu Content -->
+    <div class="dropdown-content">
+        <a href="Vendor.html">Create Vendor Account ➕</a>
+        <a href="order.html">New Purchase Order 🛒</a>
+        <a href="venp.html">Add Vendor Payment 💰</a>
+        <a href="venl.html">Vendor Ledger 📜</a>
+        <a href="vens.html">Vendor Balance Sheet 📄</a>
+    </div>
+</div>
+
+<!-- Employee -->
+<!-- Employee / HR Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-user-tie"></i>
+    <span>Employee 👤</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="emp.html">New / Edit Employee 👤+</a>
+        <a href="Area.html">Area Assign To Employee 📍</a>
+    </div>
+</div>
+
+<!-- Reports -->
+<!-- Reports Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-file-invoice"></i>
+    <span>Reports 📑</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Area.html">Print Daily Area List And Tickets 🖨️</a>
+        <a href="sale.html">Daily Sales Report 📈</a>
+        <a href="msale.html">Monthly Sales Report 📊</a>
+        <a href="year.html">Yearly Sales Report 📅</a>
+        <a href="pros.html">Product Wise Sales Report 📦</a>
+    </div>
+</div>
+
+<!-- Investment (New) -->
+<!-- Expenditure / Investment Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-hand-holding-dollar"></i>
+    <span>Expenditure 💰</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="exp.html">Expenditure 💸</a>
+        <a href="invest.html">Investment 📈</a>
+    </div>
+</div>
+
+<!-- Transaction (New) -->
+<!-- Transaction / Bank Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-money-bill-transfer"></i>
+    <span>Transaction 💳</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="tran.html">Add New Bank 🏦</a>
+        <a href="newt.html">Add New Transaction 💵</a>
+        <a href="bant.html">Check Bank Transactions Detail 📜</a>
+    </div>
+</div>
+<!-- Setting -->
+<!-- Setting / Security Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-gear"></i>
+    <span>Setting ⚙️</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Settings.html">Change System Security 🔒</a>
+        <a href="user.html">Software User Roles 👥</a>
+        <a href="sms.html">SMS API 📲</a>
+    </div>
+</div>
+        </nav>
+
+        <div class="window-controls">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+    <div class="user-strip">
+        <span><b>User:</b> Tahir Qureshi 👤</span>
+    </div>
+
+    <main class="workspace">
+        <div class="page-title">
+            <h2>CUSTOMER LEDGER 📜</h2><br><br>
+        </div>
+
+        <div class="main-grid">
+            <!-- Left Side: Filter Control -->
+            <aside class="left-pane">
+                <div class="group-box">
+                    <span class="group-label">Generate Customer Ledger</span>
+                    
+                    <div class="search-row">
+                        <label>Customer ID</label>
+                        <div class="search-input-group">
+                            <input type="text" id="ledgerCustId" placeholder="ID here...">
+                            <button class="btn-red-search" onclick="fetchLedger()">Search</button>
+                        </div>
+                    </div>
+
+                    <div class="input-set" style="margin-top: 15px;">
+                        <label>Ledger Type</label>
+                        <select id="ledgerType" onchange="toggleDateFilters()">
+                            <option value="select">Select Ledger</option>
+                            <option value="all-date">All Date wise ledger 🗓️</option>
+                            <option value="all-month">All Month Wise ledger 📅</option>
+                            <option value="day-range">From and to (Day ledger) ⏳</option>
+                            <option value="month-range">From and to (Month ledger) 🕒</option>
+                        </select>
+                    </div>
+
+                    <!-- Conditional Date Filters -->
+                    <div id="dateFilterSection" style="display: none; margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px;">
+                        <div class="input-set">
+                            <label>From Date:</label>
+                            <input type="date" id="dateFrom">
+                        </div>
+                        <div class="input-set">
+                            <label>To Date:</label>
+                            <input type="date" id="dateTo">
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Right Side: Details and Live Table -->
+            <section class="right-pane">
+                <div class="group-box">
+                    <span class="group-label">Customer Detail</span>
+                    <div class="header-details">
+                        <div class="details-left">
+                            <div class="detail-item"><label>ID:</label> <input type="text" id="dispId" readonly></div>
+                            <div class="detail-item"><label>Name:</label> <input type="text" id="dispName" readonly></div>
+                            <div class="detail-item"><label>Address:</label> <input type="text" id="dispAddr" readonly></div>
+                            <div class="detail-item"><label>Contact:</label> <input type="text" id="dispPhone" readonly></div>
+                        </div>
+                        <div class="details-right">
+                            <div class="summary-box">
+                                <label>Outstanding Bottle:</label>
+                                <input type="text" id="outBottle" value="0" readonly>
+                            </div>
+                            <div class="summary-box">
+                                <label>Outstanding Balance:</label>
+                                <input type="text" id="outBalance" value="0" readonly>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>NO</th>
+                                    <th>Order Date</th>
+                                    <th>Invoice</th>
+                                    <th>Bill No</th>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Sale Qty</th>
+                                    <th>Return Qty</th>
+                                    <th>Amount</th>
+                                    <th>Payment</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ledgerTableBody">
+                                <!-- JS Output goes here -->
+                                <tr><td colspan="10" style="text-align:center; padding:50px; opacity:0.5;">Enter Customer ID and click Search to load data.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="ledger-footer">
+                        <div class="stats-left">
+                            <div class="stat-row"><label>Total Sale Water Bottle:</label> <input type="number" id="totSale" value="0" readonly></div>
+                            <div class="stat-row"><label>Total Return Empty:</label> <input type="number" id="totRet" value="0" readonly></div>
+                            <div class="stat-row"><label>Bottle Balance:</label> <input type="number" id="botBal" value="0" readonly></div>
+                        </div>
+
+                        <div class="stats-right">
+                            <div class="stat-row"><label>Billing Amount:</label> <input type="number" class="bg-green" id="billAmt" value="0" readonly></div>
+                            <div class="stat-row"><label>Total Amount:</label> <input type="number" id="totAmt" value="0" readonly></div>
+                            <div class="stat-row"><label>Payment Received:</label> <input type="number" id="payRec" value="0" readonly></div>
+                            <div class="stat-row"><label>Tax / Discount:</label> <input type="number" class="bg-yellow" id="taxAmt" value="0" readonly></div>
+                            <div class="stat-row"><label>Balance:</label> <input type="number" class="bg-red-light" id="finalBal" value="0" readonly></div>
+                        </div>
+                        <button class="btn-red-large" onclick="window.print()"><i class="fas fa-print"></i> Print</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="status-bar">
+        <div class="status-left">© SOFTWEBPK - Financial Audit Hub</div>
+        <div class="status-right">Database Status: <span style="color:#22c55e;">● Linked</span></div>
+    </footer>
+
+    <script src="ledger.js"></script>
+</body>
+</html>

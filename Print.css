@@ -1,0 +1,121 @@
+/* --- UI Variables --- */
+:root {
+    --primary: #0062BD;
+    --bg-ui: #f0f4f8;
+    --text-ui: #1e293b;
+    --border: #e2e8f0;
+}
+
+[data-theme="dark"] {
+    --bg-ui: #0f172a;
+    --text-ui: #f1f5f9;
+    --border: #334155;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+/* --- Screen Only UI --- */
+body { background: var(--bg-ui); color: var(--text-ui); transition: 0.3s; }
+
+.ui-navbar {
+    background: var(--primary); color: white; padding: 15px 30px;
+    position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; }
+
+.btn-print { background: #22c55e; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: 700; cursor: pointer; }
+.btn-circle, .btn-back { background: rgba(255,255,255,0.15); border: none; color: white; padding: 10px 15px; border-radius: 8px; text-decoration: none; cursor: pointer; margin-left: 10px; font-size: 0.85rem; }
+
+/* --- Document Styling (Screen) --- */
+.document-container { padding: 40px 0; display: flex; justify-content: center; }
+.a4-page {
+    background: white; color: #000; width: 850px; min-height: 1100px;
+    padding: 60px; box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+/* --- Report Content --- */
+.letterhead { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+.company-logo { display: flex; align-items: center; gap: 15px; }
+.logo-orb { background: var(--primary); color: white; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+.logo-text h2 { font-size: 1.3rem; color: var(--primary); font-weight: 800; }
+.logo-text p { font-size: 0.75rem; color: #64748b; }
+
+.doc-meta { text-align: right; }
+.doc-meta h1 { font-size: 2rem; color: var(--primary); margin-bottom: 5px; border-bottom: 3px solid var(--primary); display: inline-block; }
+.doc-meta p { font-size: 0.85rem; }
+
+.horizontal-line { height: 2px; background: #333; margin: 20px 0; }
+
+.context-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.context-box label { display: block; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: #64748b; margin-bottom: 8px; }
+.context-box p { font-size: 0.95rem; line-height: 1.4; }
+
+/* Table Styling */
+.data-table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
+.data-table th { background: #f1f5f9; padding: 12px; border: 1px solid #cbd5e1; text-align: left; font-size: 0.8rem; text-transform: uppercase; }
+.data-table td { padding: 12px; border: 1px solid #cbd5e1; font-size: 0.9rem; }
+.text-right { text-align: right; }
+.grand-total-row { background: #f8fafc; font-size: 1.1rem; }
+
+/* Signatures */
+.signature-section { display: flex; justify-content: space-between; margin-top: 60px; margin-bottom: 40px; }
+.sign-block { width: 200px; text-align: center; }
+.sign-line { border-top: 1px solid #000; margin-bottom: 10px; }
+
+.document-footer { border-top: 1px solid #eee; padding-top: 20px; text-align: center; font-size: 0.7rem; color: #94a3b8; line-height: 1.5; }
+
+/* --- CRITICAL: PRINT RULES --- */
+@media print {
+    .no-print { display: none !important; }
+    body { background: white !important; }
+    .document-container { padding: 0; }
+    .a4-page { box-shadow: none; width: 100%; border: none; padding: 0; }
+    /* Force colors to print */
+    .grand-total-row td { background-color: #f1f5f9 !important; -webkit-print-color-adjust: exact; }
+    .doc-meta h1, .logo-text h2 { color: #000 !important; }
+}
+
+
+:root {
+    --primary: #0062BD;
+    --dark-blue: #003b5c;
+    --bg-page: #f0f4f7;
+    --border: #ccc;
+    --red: #c02031;
+    --qty-yellow: #fff9c4;
+}
+
+[data-theme="dark"] { --bg-page: #0d1117; --border: #444; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background: var(--bg-page); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+/* Fixed Header */
+.top-bar { background: var(--primary); color: white; height: 65px; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; flex-shrink: 0; z-index: 100; }
+.logo-circle { background: white; color: var(--primary); width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+/* Workspace SCROLLBAR FIX */
+.workspace { flex: 1; overflow-y: auto; padding: 15px; }
+.workspace::-webkit-scrollbar { width: 8px; }
+.workspace::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+
+/* Component Styles */
+.main-grid { display: grid; grid-template-columns: 0.35fr 0.65fr; gap: 20px; align-items: flex-start; }
+.group-box { background: white; border: 1px solid var(--border); padding: 25px 15px; position: relative; border-radius: 2px; }
+.group-label { position: absolute; top: -10px; left: 10px; background: white; padding: 0 5px; font-size: 0.75rem; font-weight: bold; color: #444; border: 1px solid var(--border); }
+
+/* Input Colors */
+.qty-yellow { background: var(--qty-yellow) !important; border: 1.5px solid #000 !important; font-weight: 800; }
+.read-only-grey { background: #eee !important; color: #333; font-weight: bold; }
+
+.btn-blue-dark { background: var(--dark-blue); color: white; border: none; padding: 12px; font-weight: 700; width: 100%; cursor: pointer; }
+.btn-red-search { background: var(--red); color: white; border: none; padding: 8px 25px; border-radius: 2px; font-weight: bold; cursor: pointer; }
+
+/* Table Selection */
+tr:hover { background: #eef7ff; cursor: pointer; }
+.selected-row { background: #0078D7 !important; color: white !important; }
+
+/* Footer */
+.status-bar { background: var(--primary); color: white; height: 35px; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; font-size: 0.75rem; flex-shrink: 0; }

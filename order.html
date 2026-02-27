@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Order | AquaFlow ERP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+      <!-- Header Section -->
+    <header class="top-bar">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fas fa-droplet"></i>
+            </div>
+            <div class="logo-text">
+                <h1>Drinking Water 💧</h1>
+                <p>Inventory Software</p>
+            </div>
+        </div>
+
+        <nav class="icon-nav">
+            <a href="#" class="nav-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Dashboard 📊</span>
+            </a>
+            <div class="nav-item dropdown">
+                <i class="fas fa-box"></i>
+                <a href="produ.html" class="menu-link">
+  <span>Products 📦</span>
+</a>
+
+                <div class="dropdown-content">
+                    <a href="produ.html">Add New Product ➕</a>
+                    <a href="bot.html">Add New Bottle Filling Stock 🍼</a>
+                    <a href="fill.html">Filling Stock History 📜</a>
+                    <a href="Stock.html">Stock IN / OUT 🔄</a>
+                    <a href="Check.html">Check Stock Balance ⚖️</a>
+                </div>
+            </div>
+          <!-- Customers -->
+<!-- Customers Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-users"></i>
+    <span>Customers 👥</span>
+    
+    <!-- Dropdown Content -->
+    <div class="dropdown-content">
+        <a href="cust.html">New Customer 👤+</a>
+        <a href="order.html">New Sales Order 🛒</a>
+        <a href="pay.html">Add Customer Payment 💰</a>
+        <a href="ledger.html">Customer Ledger 📜</a>
+        <a href="Security.html">Customer Security Amount 🛡️</a>
+        <a href="sheet.html">Customer Balance Sheet ⚖️</a>
+        <a href="price.html">Set Product Price To Customer 🏷️</a>
+        <a href="add.html">Set Customer Pin From Google Map 📍</a>
+    </div>
+</div>
+
+
+<!-- Vendor -->
+<!-- Vendor Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-truck-field"></i>
+    <span>Vendor 🚛</span>
+    
+    <!-- Dropdown Menu Content -->
+    <div class="dropdown-content">
+        <a href="Vendor.html">Create Vendor Account ➕</a>
+        <a href="order.html">New Purchase Order 🛒</a>
+        <a href="venp.html">Add Vendor Payment 💰</a>
+        <a href="venl.html">Vendor Ledger 📜</a>
+        <a href="vens.html">Vendor Balance Sheet 📄</a>
+    </div>
+</div>
+
+<!-- Employee -->
+<!-- Employee / HR Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-user-tie"></i>
+    <span>Employee 👤</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="emp.html">New / Edit Employee 👤+</a>
+        <a href="Area.html">Area Assign To Employee 📍</a>
+    </div>
+</div>
+
+<!-- Reports -->
+<!-- Reports Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-file-invoice"></i>
+    <span>Reports 📑</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Area.html">Print Daily Area List And Tickets 🖨️</a>
+        <a href="sale.html">Daily Sales Report 📈</a>
+        <a href="msale.html">Monthly Sales Report 📊</a>
+        <a href="year.html">Yearly Sales Report 📅</a>
+        <a href="pros.html">Product Wise Sales Report 📦</a>
+    </div>
+</div>
+
+<!-- Investment (New) -->
+<!-- Expenditure / Investment Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-hand-holding-dollar"></i>
+    <span>Expenditure 💰</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="exp.html">Expenditure 💸</a>
+        <a href="invest.html">Investment 📈</a>
+    </div>
+</div>
+
+<!-- Transaction (New) -->
+<!-- Transaction / Bank Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-money-bill-transfer"></i>
+    <span>Transaction 💳</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="tran.html">Add New Bank 🏦</a>
+        <a href="newt.html">Add New Transaction 💵</a>
+        <a href="bant.html">Check Bank Transactions Detail 📜</a>
+    </div>
+</div>
+<!-- Setting -->
+<!-- Setting / Security Dropdown Hub -->
+<div class="nav-item dropdown">
+    <i class="fas fa-gear"></i>
+    <span>Setting ⚙️</span>
+    
+    <!-- Dropdown Content (Exact match to your image) -->
+    <div class="dropdown-content">
+        <a href="Settings.html">Change System Security 🔒</a>
+        <a href="user.html">Software User Roles 👥</a>
+        <a href="sms.html">SMS API 📲</a>
+    </div>
+</div>
+        </nav>
+
+        <div class="window-controls">
+            <button id="theme-toggle" title="Toggle Light/Dark Mode"><i class="fas fa-moon"></i></button>
+            <i class="fas fa-window-minimize"></i>
+            <i class="fas fa-window-maximize"></i>
+            <i class="fas fa-rectangle-xmark close-btn"></i>
+        </div>
+    </header>
+
+    <div class="user-strip">
+        <span><b>User:</b> Tahir Qureshi 👤</span>
+    </div>
+
+    <main class="workspace">
+        <div class="page-header">
+            <h2 class="module-title">NEW ORDER 🛒</h2>
+            <div class="search-section">
+                <label>Search By Customer ID</label>
+                <div class="search-group">
+                    <!-- SEARCH INPUT -->
+                    <input type="text" id="custIdInput" class="input-yellow" placeholder="Enter ID (e.g. 1)">
+                    <button class="btn-red-sm" onclick="searchCustomer()">Search</button>
+                    <button class="btn-red-sm" onclick="openModal()">Advance Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-grid">
+            <!-- LEFT: Line Item Entry -->
+            <section class="item-pane">
+                <div class="order-card">
+                    <h3 class="card-title">New Bill</h3>
+                    <hr class="divider">
+                    <div class="input-group">
+                        <label>Select Product</label>
+                        <select id="prodSelect" onchange="updatePrice()">
+                            <option value="">Select Product</option>
+                            <!-- Items loaded from Prod.html database -->
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Price</label>
+                        <input type="number" id="priceInput" class="input-yellow" value="0">
+                    </div>
+                    
+                    <div class="qty-row">
+                        <div class="input-group">
+                            <label>S-Quantity</label>
+                            <input type="number" id="sQty" class="input-yellow" value="0" oninput="calculateTotal()">
+                        </div>
+                        <div class="input-group">
+                            <label>R-Quantity (19L)</label>
+                            <input type="number" id="rQty" class="input-yellow" value="0">
+                        </div>
+                        <div class="input-group">
+                            <label>Amount</label>
+                            <input type="number" id="rowAmount" class="input-readonly" readonly value="0">
+                        </div>
+                    </div>
+
+                    <div class="entry-actions">
+                        <button class="btn-blue-outline" onclick="clearLine()">Clear Item 🧹</button>
+                        <button class="btn-blue-dark" onclick="location.reload()">Generate New Bill ✨</button>
+                        <button class="btn-blue-dark" onclick="addItem()">Add Item In List ➕</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RIGHT: Billing Details -->
+            <section class="billing-pane">
+                <div class="group-box">
+                    <span class="group-label">Billing</span>
+                    
+                    <div class="sub-section">
+                        <p class="section-tag">Customer Information</p>
+                        <div class="info-row">
+                            <div class="field"><label>Customer ID</label><input type="text" id="dispId" readonly class="input-readonly"></div>
+                            <div class="field"><label>Customer Name:</label><input type="text" id="dispName" readonly class="input-readonly"></div>
+                            <div class="field"><label>Address:</label><input type="text" id="dispAddr" readonly class="input-readonly"></div>
+                        </div>
+                    </div>
+
+                    <div class="meta-grid">
+                        <div class="field full">
+                            <label>Select Salesman:</label>
+                            <select id="salesmanSelect">
+                                <option value="">Select Salesman</option>
+                                <!-- Linked from Staff module -->
+                            </select>
+                        </div>
+                        <div class="field"><label>Order Date:</label><input type="date" id="orderDate"></div>
+                        <div class="field"><label>Invoice #</label><input type="text" class="input-readonly" value="S-0902021162845" readonly></div>
+                        <div class="field"><label>Bill Book #</label><input type="text" class="input-yellow" value="0"></div>
+                    </div>
+
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Return Qty</th>
+                                    <th>Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="billBody">
+                                <!-- Table Rows -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="billing-footer">
+                        <div class="footer-btns">
+                            <button class="btn-blue-dark" onclick="saveBill()">Save Bill ✅</button>
+                            <button class="btn-red-large" onclick="window.print()">Print Bill 🖨️</button>
+                        </div>
+                        <div class="totals-pane">
+                            <div class="tot-row"><span>Total Amount:</span> <input type="text" id="grandTotal" value="0" readonly></div>
+                            <div class="tot-row"><span>Payment:</span> <input type="text" value="0" class="input-yellow"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Advance Search Modal -->
+        <div class="modal-overlay" id="searchModal">
+            <div class="modal-box">
+                <div class="modal-header">
+                    <span>Advance Customer Search 🔍</span>
+                    <button class="btn-close-modal" onclick="closeModal()">X</button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" id="modalSearch" class="input-yellow" placeholder="Search by name..." onkeyup="filterModal()">
+                    <div class="modal-table-scroll">
+                        <table class="adv-table">
+                            <thead>
+                                <tr><th>ID</th><th>Name</th><th>Area</th><th>Action</th></tr>
+                            </thead>
+                            <tbody id="modalDataBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Professional Status Bar -->
+    <footer class="status-bar">
+        <div class="status-left">© SOFTWEBPK - Linked Operations Hub</div>
+        <div class="status-center">App Code: <b>RG-Demo</b></div>
+        <div class="status-right">Help Line: 0092-315-1150070 📞</div>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>
+
