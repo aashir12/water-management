@@ -150,11 +150,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 **Project Maintainer**: [Your Name]
-- Email: your.email@example.com
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- Email: aashirnawaz5@gmail.com
+- GitHub: [@aashir](https://github.com/aashir)
+- LinkedIn: [Aashir Nawaz Awan ](https://www.linkedin.com/in/aashir-nawaz-a5a174247/)
 
-**Project Link**: [https://github.com/yourusername/watersupplyproject](https://github.com/yourusername/watersupplyproject)
+**Project Link**: [https://github.com/aashir12/watersupplyproject](https://github.com/aashir12/watersupplyproject)
 
 ---
 
